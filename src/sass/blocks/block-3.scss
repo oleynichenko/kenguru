@@ -1,0 +1,17 @@
+.block-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+
+  box-sizing: border-box;
+  height: 100%;
+  padding: 20px;
+
+  background-color: $grey;
+}
+
+.block-3__link {
+  color: #fff;
+  text-decoration: none;
+}

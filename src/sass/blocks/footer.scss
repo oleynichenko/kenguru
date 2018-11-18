@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+
+  margin-right: -28px;
+}
+
+.footer__item {
+  flex-basis: 0;
+  flex-grow: 1;
+
+  margin-right: 28px;
+
+  overflow: hidden;
+}
+
+.footer__item--column {
+  display: flex;
+  flex-direction: column;
+}

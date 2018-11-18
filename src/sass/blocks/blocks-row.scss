@@ -1,0 +1,16 @@
+.blocks-row {
+  display: flex;
+  margin-right: -18px;
+}
+
+.blocks-row__item {
+  flex-basis: 0;
+  flex-grow: 1;
+
+  padding: 20px;
+  padding-bottom: 24px;
+  margin-right: 18px;
+
+  color: $grey;
+  background-color: $grey-light;
+}

@@ -1,0 +1,55 @@
+@mixin btn-circle($btn-color, $sign-color, $btn-size) {
+    width: $btn-size;
+    height: $btn-size;
+
+    border-radius: 50%;
+
+    background-color: $btn-color;
+
+    transition: background-color 0.3s;
+    outline: none;
+
+    &:hover {
+      background-color: darken( $btn-color, 20% );
+    }
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+
+      width: $btn-size * 0.6;
+      height: 2px;
+
+      margin: auto;
+
+      background-color: $sign-color;
+      transition: transform 0.3s;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &:active::before,
+    &:active::after {
+      opacity: 0.3;
+    }
+
+    &:hover::before {
+      transform: rotate(135deg);
+    }
+
+    &:hover::after {
+      transform: rotate(45deg);
+    }
+}

@@ -1,0 +1,16 @@
+.block-10 {
+  background-color: $grey;
+  color: $white;
+}
+
+.block-10__items {
+  @include reset-ul;
+  columns: 2;
+  column-gap: 10px;
+  column-fill: balance;
+  padding: 14px 24px;
+}
+
+.block-10__item {
+  overflow: hidden;
+}

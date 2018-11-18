@@ -1,0 +1,31 @@
+.block-4 {
+  padding: 20px 14px;
+  margin-bottom: 24px;
+
+  background-color: $grey;
+  color: $white;
+}
+
+.block-4__title {
+  margin-bottom: 5px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.block-4__nav {
+  @include reset-ul;
+}
+
+.block-4__nav li {
+    margin-bottom: 4px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+}
+
+.block-4__link {
+  text-decoration: none;
+}

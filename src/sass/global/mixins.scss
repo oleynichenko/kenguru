@@ -1,0 +1,11 @@
+ @import "mixins/btn.scss";
+ @import "mixins/btn-circle.scss";
+ @import "mixins/vh.scss";
+ @import "mixins/reset-ul.scss";
+
+@mixin line {
+  position: absolute;
+  border-top: 2px solid $grey;
+  width: 100%;
+}
+

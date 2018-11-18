@@ -1,0 +1,51 @@
+$content-width: 1000px;
+$content-height: 500px;
+$wrapper-color: rgba(0, 0, 0, 0.4);
+
+.pop-up__wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+
+  background-color: $wrapper-color;
+}
+
+.pop-up {
+  width: $content-width;
+  height: $content-height;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 101;
+
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.2),
+    60px 0px 40px -60px rgba(0, 0, 0, 0.7),
+    -60px 0px 40px -60px rgba(0, 0, 0, 0.7);
+
+  overflow: hidden;
+}
+
+.pop-up__title {
+  @include vh;
+}
+
+.pop-up__btn {
+  @include btn;
+  @include btn-circle($grey, $grey-light, 36px);
+
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.pop-up img {
+  width: 100%;
+}

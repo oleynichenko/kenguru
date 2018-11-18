@@ -1,0 +1,18 @@
+.blocks-6 {
+  margin-right: -24px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blocks-6 img {
+  width: 132px;
+  height: 150px;
+
+  margin-right: 24px;
+  margin-bottom: 22px;
+
+  &:last-child {
+    margin-right: auto;
+  }
+}

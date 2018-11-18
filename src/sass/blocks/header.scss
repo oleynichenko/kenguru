@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  height: 122px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.header__col {
+  overflow: hidden;
+}
+
+.header__col-1 {
+  width: 122px;
+}
+
+.header__col-2  {
+  width: 278px;
+}
+
+.header__col-3 {
+  width: 513px;
+}
